@@ -5,43 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
 </head>
 <body>
-    <form action=""> 
-        <label for="nombres">Nombres:</label>
-        <input required placeholder="Escribe tu Nombre" type="text">
-        <br>
-        <br>                   
-        <br>
-        <label for="apellidos">Apellidos:</label>
-        <input required placeholder="Escribe tus Apellidos" type="text">
-        <br>
-        <br>                    
-        <br>
-        <label for="number">Edad:</label>
-        <input required placeholder="Coloca tu Edad" id="number" name="number"min= "0" type="Number">
-        <br>
-        <br>                
-        <br>
-        <label for="email">Email:</label>
-        <input required placeholder="Coloca tu Email" id="email" name="email" type="email">
-        <br>
-        <br>
-        <br>
-        <label for="password">Contraseña:</label>
-        <input required placeholder="Coloca tu Contraseña" id="password" name="Contraseña" type="password">
-        <br>
-        <br>
-        <br>
-        <button type="submit">✔ Enviar ✔</button>
-        <br>
-        <br>
-        <br>
-        <label for="Comentarios">📄 Comentarios 📄</label>
-        <br>
-        <textarea placeholder="Comenta que te parecio nuestro Sitio Web" name="Comentarios" rows="8" cols="80"></textarea>
-        <br>
-        <br>
+    <section class="form-register">
+        <h4>Formulario Registro</h4>
+        <div id="Titulos">
+        <label for="nombres">Nombres</label>
+        </div>
+        <input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+        <div id="Titulos">
+        <label for="apellidos">Apellidos</label>
+        </div>
+        <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+        <div id="Titulos">
+        <label  for="email">Email</label>
+        </div>
+        <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+        <div id="Titulos">
+        <label for="password">Contraseña</label>
+        </div>
+        <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+        <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+        <input class="botons" type="submit" value="Registrar">
+        <p><a href="#">¿Ya tengo Cuenta?</a></p>
+        <div id="Comentarios">
+        <label for="Comentarios"> Comentarios </label>
+        </div>
+        <textarea placeholder="Comenta que te parecio nuestro Sitio Web" name="Comentarios" rows="8" cols="44"></textarea>
+    </section>
     </form>
     
 </body>

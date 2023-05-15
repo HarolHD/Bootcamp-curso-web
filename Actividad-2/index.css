@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 10px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 ul > li {
     color: rgb(0, 0, 0);
@@ -9,7 +9,7 @@ ul > li {
 }
 li:hover{
     font-size: 20px;
-    color: rgb(0, 204, 255);
+    color: rgb(72, 139, 151);
 }
 .main{
     justify-self: end;
@@ -23,8 +23,9 @@ nav {height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.788);
     border-radius: 10px;
+    
 }
 #logo {
     height: 50px;
@@ -42,7 +43,7 @@ body {
     display; grid;
 }
 ul{
-    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.418);
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -60,36 +61,199 @@ h1{
 }
 h2{
     display: flex;
-    align-items: center;
+    align-content: center;
     justify-content: center;
-    color: rgb(0, 238, 255);
+    width: 30vh;
+    color: rgb(255, 255, 255);
     border: 3px solid rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    border-radius: 80%;
+    background-color: rgba(0, 0, 0, 0.438);
+    border-radius: 10px;
 }
 p{
-    border: 3px solid rgb(0, 0, 0);
-    background-color: rgb(0, 255, 242);
+    border: 3px solid rgba(0, 0, 0, 0.486);
+    background-color: rgba(255, 255, 255, 0.623);
     color: rgb(0, 0, 0);
     text-align: center;
-    border-style: groove;
+    border-radius: 10px;
 }
 section{
+    height: 210px;
+    width: 380px;
     text-align: center;
     border: 3px solid rgb(255, 255, 255);
     background-color: rgb(0, 0, 0);
     color: rgb(0, 238, 255);
-    margin: 100px 500px 1px 500px;
 }
-h3{
-    text-align: center;
-    border: 3px solid rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    color: rgb(0, 238, 255);
-    margin: 50px 500px 1px 500px;
-}
-div#H1{
+div#formulario {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+div#H3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h3{
+    height: 60px;
+    width: 380px;
+    text-align: center;
+    border: 3px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 238, 255);
+}
+div#H1{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#H2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagenes-steve-jobs {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+
+.imagenes-steve-jobs > div {
+flex: 1;
+border-radius: 1rem;
+background-position: center;
+background-repeat: no-repeat;
+background-size: auto 100%;
+transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.imagenes-steve-jobs > div:hover {
+    flex: 5;
+}
+
+.imagenes-apple {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+
+.imagenes-apple > div {
+flex: 1;
+border-radius: 1rem;
+background-position: center;
+background-repeat: no-repeat;
+background-size: auto 100%;
+transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.imagenes-apple > div:hover {
+    flex: 5;
+}
+
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 30px;
+        color:rgb(0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.356);
+    }
+    h2{
+        font-size: 30px;
+        color:rgb(0, 0, 0);
+        background-color: rgba(255, 255, 255, 0.356);
+    }
+    .imagenes-steve-jobs {
+        display: flex;
+        height: 10rem;
+        gap: 1rem;
+    }
+    .imagenes-apple {
+        display: flex;
+        height: 5rem;
+        gap: 1rem;
+    }
+    p {
+        font-size: 15px;
+        color:rgb(255, 255, 255);
+        background-color: rgba(0, 0, 0, 0.356);
+    }
+    footer{
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .main{
+        justify-self: center;
+        align-self: center;
+    }
+    
+    #header {
+        align-self: center;
+        justify-self: center;
+    }
+    body {
+        background-image: url("https://i.pinimg.com/originals/ef/47/2d/ef472dec2b0357c5cbb43e00ee178798.png");
+    }
+}
+@media screen and (max-width: 300px){
+    p {
+        font-size: 8px;
+        color: rgb(255, 251, 0);
+        border-color: rgb(0, 255, 255);
+    }
+    body {
+        background-image: url("https://i.pinimg.com/originals/f5/c9/6b/f5c96b71ec361bfd0190ef73eee004b5.jpg");
+    }
+    nav {
+        height: 30px;
+        background-color: aquamarine;
+    }
+    #logo {
+        height: 20px;
+    }
+    ul {
+        font-size: 4px;
+    }
+    li:hover {
+        font-size: 8px;
+        color: rgb(0, 217, 255);
+    }
+    h1 {
+        font-size: 15px;
+        color:rgb(238, 255, 0);
+        border-color: rgb(0, 255, 0);
+        background-color: rgba(0, 0, 0, 0.356); 
+    }
+    div#H1 {
+        height: 50px;
+    }
+    H2 {
+        font-size: 20px;
+        color:rgb(238, 255, 0);
+        border-color: rgb(0, 255, 0);
+        background-color: rgba(0, 0, 0, 0.356); 
+    }
+    h3 {
+        height: 40px;
+        font-size: 10px;
+    }
+    #formulario{
+        font-size: 10px;
+    }
+    section{
+        height: 120px;
+    }
+    #mac-center {
+        height: 80px;
+    }
+    .imagenes-steve-jobs {
+        display: flex;
+        height: 4rem;
+        width: 200px;
+        gap: 0rem;
+    }
+    .imagenes-apple {
+        display: flex;
+        height: 4rem;
+        width: 300px;
+        gap: 0rem;
+        margin: 0px 50px 0px 0px;
 }
